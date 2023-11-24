@@ -104,6 +104,14 @@ source .pt2/bin/activate
 pip3 install -r requirements/pt2.txt
 ```
 
+My alternative:
+```
+conda create --name svd python=3.10.13
+conda activate svg
+python -m pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 -f https://download.pytorch.org/whl/torch_stable.html
+python -m pip install -r requirements/pt2.txt
+```
+
 #### 3. Install `sgm`
 
 ```shell
